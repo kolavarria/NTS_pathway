@@ -1,0 +1,33 @@
+--------------EMP-------------
+EX_PolyPP           	          -8
+EX_PolyP            	           8
+EX_Mal4             	          -1
+EX_Mal3             	           1
+EX_Ace              	          -6
+EX_Pi               	           8
+EX_CO2              	           2
+EX_HB               	          -4
+EX_PHB              	           4
+EX_H2O              	          -3
+------------NTS-----------------
+EX_PolyPP           	        -3.6
+EX_PolyP            	         3.6
+EX_Mal4             	          -1
+EX_Mal3             	           1
+EX_Ace              	        -2.4
+EX_Pi               	         3.6
+EX_CO2              	         1.2
+EX_HB               	        -2.4
+EX_PHB              	         2.4
+EX_H2O              	          -1
+------------RS-----------------
+EX_PolyPP           	        -3.6
+EX_PolyP            	         3.6
+EX_Mal4             	          -1
+EX_Mal3             	           1
+EX_Ace              	        -2.4
+EX_Pi               	         3.6
+EX_CO2              	         1.2
+EX_HB               	        -2.4
+EX_PHB              	         2.4
+EX_H2O              	          -1

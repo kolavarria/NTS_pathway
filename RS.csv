@@ -1,0 +1,22 @@
+Reaction Name,Reaction Formula,Relative Flux
+GlycP,Mal4 + Pi <=> G1P + Mal3 ,1
+GPM,G1P <=> G6P ,1
+PGI,G6P <=> F6P ,1
+PPiPFK,F6P + PPi <=> Pi + FBP ,0.2
+FBPald,FBP <=> DHAP + G3P ,0.2
+TPI,DHAP <=> G3P ,0.2
+TktA,F6P + G3P <=> X5P + E4P ,0.4
+TALA,F6P + E4P <=> G3P + S7P ,0.4
+TktB,G3P + S7P <=> X5P + Ri5P ,0.4
+RibE,X5P <=> Ru5P ,0.8
+RibI,Ri5P <=> Ru5P ,0.4
+RbuK,ATP + Ru5P <=> ADP + RBP ,1.2
+RbuCO,H2O + CO2 + RBP <=> 2 P3G ,1.2
+PGM,P3G <=> P2G ,2.4
+ENO,P2G <=> PEP + H2O ,2.4
+PYK,ADP + PEP <=> ATP + PYR ,2.4
+PDH,NAD + PYR + CoA <=> NADH + AcCoA + CO2 ,2.4
+ACS,ATP + CoA + Ace <=> PPi + AcCoA + AMP ,2.4
+PPiase,PPi + H2O <=> 2 Pi ,2.2
+Thio,2 AcCoA <=> CoA + AACoA ,2.4
+AAR,NADH + AACoA <=> NAD + HBCoA ,2.4

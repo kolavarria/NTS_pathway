@@ -1,0 +1,38 @@
+Reaction Name,Reaction Formula
+GlycP,Mal4 + Pi  -> G1P + Mal3 
+GPM,G1P  <=> G6P 
+PGI,G6P  <=> F6P 
+PPiPFK,F6P + PPi  -> Pi + FBP 
+FBPald,FBP  <=> DHAP + G3P 
+TPI,DHAP  <=> G3P 
+GAPDH,Pi + G3P + NAD  <=> BPG + NADH 
+PGK,BPG + ADP  <=> P3G + ATP 
+PGM,P3G  <=> P2G 
+ENO,P2G  <=> PEP + H2O 
+PYK,ADP + PEP  -> ATP + PYR 
+PDH,NAD + PYR + CoA  -> NADH + AcCoA + CO2 
+ACS,ATP + CoA + Ace  -> PPi + AcCoA + AMP 
+Thio,2 AcCoA  -> CoA + AACoA 
+AAR,NADH + AACoA  -> NAD + HBCoA 
+PHBsyn,HBCoA + HB  -> CoA + PHB 
+TktA,F6P + G3P  <=> X5P + E4P 
+SBPald,DHAP + E4P  <=> SBP 
+SBPase,H2O + SBP  -> Pi + S7P 
+TktB,G3P + S7P  <=> X5P + Ri5P 
+RibE,X5P  <=> Ru5P 
+RibI,Ri5P  <=> Ru5P 
+RbuK,ATP + Ru5P  -> ADP + RBP 
+RbuCO,H2O + CO2 + RBP  -> 2 P3G 
+ADPPPT,ADP + PolyPP  -> ATP + PolyP 
+AMPPPT,AMP + PolyPP  -> ADP + PolyP 
+PPiase,PPi + H2O  -> 2 Pi 
+EX_PolyPP,PolyPP  <=> 
+EX_PolyP,PolyP  <=> 
+EX_Mal4,Mal4  <=> 
+EX_Mal3,Mal3  <=> 
+EX_Ace,Ace  <=> 
+EX_Pi,Pi  -> 
+EX_CO2,CO2  <=> 
+EX_HB,HB  <=> 
+EX_PHB,PHB  <=> 
+EX_H2O,H2O  <=> 
