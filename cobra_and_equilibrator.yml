@@ -1,0 +1,20 @@
+name: cobra_and_equilibrator
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9
+  - cobra
+  - notebook=6.5.6
+  - ipykernel
+  - pandas=1.5.3
+  - sqlalchemy=1.4.49
+  - plotly=5.15.0
+  - pip
+  - pip:
+      - equilibrator-api==0.4.5.1
+      - equilibrator-cache==0.4.3
+      - equilibrator-pathway==0.4.4
+      - kaleido
+      - pymupdf

@@ -1,0 +1,54 @@
+All our calculations and analyses were performed using the operative system Windows (64 bits), with an open source version of Python: Anaconda 3, conda version : 24.11.3, conda-build version : 24.9.0, python version : 3.12.7.final.0, solver : libmamba (default)
+       virtual packages : __archspec=1=haswell
+                          __conda=24.11.3=0
+                          __cuda=10.1=0
+                          __win=0=0
+
+To reproduce our analyses, place the following files in a known folder in your computer:
+
+custom_plot_functions.py
+equilibrator_custom_functions.py
+equilibrator_custom_functions_my.py
+input C13 data.xlsx
+input physiologic data during labeling.xlsx
+input_data_bioreactor.csv
+input_MW_values.csv
+input_kinetic_parameters_database.csv
+input_metabolite_ranges_default.csv
+input_proteomics.xlsx
+script_01_processing_proteomic_and_physiology_data.ipynb
+script_02_FBA_stoichiometric_model_maker.ipynb
+script_03_plotting_labeling_data.ipynb
+script_04_FBA_metabolic_fluxes_labeling.ipynb
+script_05_MDF_metabolic_fluxes_labeling.ipynb
+script_06_FBA_pathway_maker.ipynb
+script_07_MDF_pathways.ipynb
+script_08_FBA_generating_file_for_ECM.ipynb
+script_09_ECM_calculations.ipynb
+
+Our analyses combined Flux Balance Analyses (performed with the open source software CobraPy) with thermodynamic calculations (performed with the open source software eQuilibrator). The inter-operatibility of these software inside the same environment depends on the combination of compatible versions. Finding by yourself the right combination(s) could be challenging. Therefore, to facilitate the reproducibility of our analyses, we strongly recommend the reproduction, in your computer, of the Python environment we created to perform these analyses. To facilitate the reproduction of this environment in another computer, we created a file named "cobra_and_equilibrator.yml". To reproduce in your computer the environment we created for our analyses, place the file named "cobra_and_equilibrator.yml" in an easy-to-find folder in your computer. Launch Anaconda prompt in your computer and navigate to the folder where you placed the file "cobra_and_equilibrator.yml". Then just type in the Anaconda prompt:
+
+conda env create -f cobra_and_equilibrator.yml
+
+This command enables the creation of an environment named "cobra_and_equilibrator" in your computer. Once the environment is created, you should activate this environment by typing in the Anaconda prompt:
+
+conda activate cobra_and_equilibrator
+
+Once the environment "cobra_and_equilibrator" is active, launch Jupyter Notebook by typing in the Anaconda prompt:
+
+jupyter notebook
+
+Once Jupyter Notebook is launched, navigate to the folder in your computer where you previously saved the provided files. Then you can perform the execution of the scripts inside Jupyter Notebook. The successful running of a given script depends on the existance of input files. Some of these input files are provided by us in the github "https://github.com/kolavarria/NTS_pathway" or are created with a script that you should run before. Therefore, you should execute the provided scripts by their numerical order, i.e., first the script named "script_01_processing_proteomic_and_physiology_data.ipynb", then the script named "script_02_FBA_stoichiometric_model_maker.ipynb" and so on. 
+
+Alternatively, we provide here the list of the packages we installed to create the environment "cobra_and_equilibrator". Feel free to explore different versions, but we have not tested other combinations of versions. Therefore, you can try this approach by your own risk. Here the list, in the order of installation we employed/recommend:
+
+conda create -n cobra_and_equilibrator python=3.9
+conda activate cobra_and_equilibrator
+pip install equilibrator-api==0.4.5.1 equilibrator-cache==0.4.3 equilibrator-pathway==0.4.4
+conda install -c conda-forge cobra
+pip install notebook==6.5.6
+python -m ipykernel install --user --name=cobra_and_equilibrator --display-name "Python (cobra_and_equilibrator)"
+conda install pandas=1.5.3 sqlalchemy=1.4.49
+conda install -c conda-forge plotly=5.15.0
+pip install -U kaleido
+pip install pymupdf
